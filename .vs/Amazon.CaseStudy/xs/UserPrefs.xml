@@ -1,0 +1,6 @@
+﻿<Properties StartupConfiguration="{4EA4F5F4-FD7D-4000-8E83-6A2FD3BDF125}|Default">
+  <MonoDevelop.Ide.ItemProperties.Amazon.CaseStudy.Core FirstBuild="True" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Amazon.CaseStudy.Selenium FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Amazon.CaseStudy.Application FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
