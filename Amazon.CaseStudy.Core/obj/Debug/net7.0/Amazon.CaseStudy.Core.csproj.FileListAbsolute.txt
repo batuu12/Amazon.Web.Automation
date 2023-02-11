@@ -1,0 +1,5 @@
+/Users/batuhancanci/Desktop/CodeTrainings/Amazon.CaseStudy/Amazon.CaseStudy.Core/obj/Debug/net7.0/Amazon.CaseStudy.Core.csproj.AssemblyReference.cache
+/Users/batuhancanci/Desktop/CodeTrainings/Amazon.CaseStudy/Amazon.CaseStudy.Core/obj/Debug/net7.0/Amazon.CaseStudy.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/batuhancanci/Desktop/CodeTrainings/Amazon.CaseStudy/Amazon.CaseStudy.Core/obj/Debug/net7.0/Amazon.CaseStudy.Core.AssemblyInfoInputs.cache
+/Users/batuhancanci/Desktop/CodeTrainings/Amazon.CaseStudy/Amazon.CaseStudy.Core/obj/Debug/net7.0/Amazon.CaseStudy.Core.AssemblyInfo.cs
+/Users/batuhancanci/Desktop/CodeTrainings/Amazon.CaseStudy/Amazon.CaseStudy.Core/obj/Debug/net7.0/Amazon.CaseStudy.Core.csproj.CoreCompileInputs.cache

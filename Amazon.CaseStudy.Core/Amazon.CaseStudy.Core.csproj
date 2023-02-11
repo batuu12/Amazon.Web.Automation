@@ -6,4 +6,17 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Factory\" />
+    <None Remove="Selenium.WebDriver" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Factory\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Amazon.CaseStudy.Selenium\Amazon.CaseStudy.Selenium.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Selenium.WebDriver" Version="4.8.0" />
+  </ItemGroup>
 </Project>

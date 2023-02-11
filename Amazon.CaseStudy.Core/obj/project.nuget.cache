@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "fJFAA3dKLShZSsfZe7wiR0JomVaJUO0KqeLTXZh5TykuodrNH+OJ5i78DshWbHxbbDKINPTMpkEVr9rNo9YjOA==",
+  "dgSpecHash": "oHP5bM9A9vddvrFwxQnQzA0JCMIxZTSAlpEsVxyi7NRv1mt+S9ipjAihjBYDEhnrbsTDIj08pSluZPlmZNKxCA==",
   "success": true,
   "projectFilePath": "/Users/batuhancanci/Desktop/CodeTrainings/Amazon.CaseStudy/Amazon.CaseStudy.Core/Amazon.CaseStudy.Core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/batuhancanci/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
+    "/Users/batuhancanci/.nuget/packages/selenium.webdriver/4.8.0/selenium.webdriver.4.8.0.nupkg.sha512"
+  ],
   "logs": []
 }
