@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amazon.CaseStudy.Selenium",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amazon.CaseStudy.Application", "Amazon.CaseStudy.Application\Amazon.CaseStudy.Application.csproj", "{4EA4F5F4-FD7D-4000-8E83-6A2FD3BDF125}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amazon.CaseStudy.Tests", "Amazon.CaseStudy.Tests\Amazon.CaseStudy.Tests.csproj", "{C48C595E-BEAC-40A3-845D-529F659D2220}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{4EA4F5F4-FD7D-4000-8E83-6A2FD3BDF125}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4EA4F5F4-FD7D-4000-8E83-6A2FD3BDF125}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4EA4F5F4-FD7D-4000-8E83-6A2FD3BDF125}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C48C595E-BEAC-40A3-845D-529F659D2220}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C48C595E-BEAC-40A3-845D-529F659D2220}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C48C595E-BEAC-40A3-845D-529F659D2220}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C48C595E-BEAC-40A3-845D-529F659D2220}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -20,6 +20,10 @@ namespace Amazon.CaseStudy.Selenium.Data.PageObjects
 
         public IWebElement SearchButton => webDriver.FindElement(By.Id("nav-search-submit-button"));
 
+        public IWebElement MyAccountButton => webDriver.FindElement(By.XPath("//span[text()='Hesap ve Listeler']"));
+
+        public IWebElement MyAccountText => webDriver.FindElement(By.XPath("//a[text()='Hesabım']"));
+
     }
 }
 
