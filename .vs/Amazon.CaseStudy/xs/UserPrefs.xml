@@ -1,16 +1,19 @@
 ﻿<Properties StartupConfiguration="{4EA4F5F4-FD7D-4000-8E83-6A2FD3BDF125}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/batuhancanci/Desktop/CodeTrainings/Amazon.CaseStudy/Amazon.CaseStudy.Core/Model/TestBenchInstance.cs" relfile="Amazon.CaseStudy.Core/Model/TestBenchInstance.cs" line="35" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Amazon.CaseStudy.Core/Model/TestBenchInstance.cs">
+  <MonoDevelop.Ide.ItemProperties.Amazon.CaseStudy.Application PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Amazon.CaseStudy.Core/Testbench.json">
     <Files>
-      <File FileName="Amazon.CaseStudy.Application/Program.cs" Line="14" Column="6" />
-      <File FileName="Amazon.CaseStudy.Core/Model/TestBenchInstance.cs" Line="25" Column="22" />
+      <File FileName="Amazon.CaseStudy.Application/Program.cs" />
+      <File FileName="Amazon.CaseStudy.Core/Model/TestBenchInstance.cs" />
+      <File FileName="Amazon.CaseStudy.Selenium/Business/Operations/SignInPage.cs" />
+      <File FileName="Amazon.CaseStudy.Selenium/Data/PageObjects/SignInPageObject.cs" />
+      <File FileName="Amazon.CaseStudy.Core/TestEnvironment/Login.cs" />
+      <File FileName="Amazon.CaseStudy.Core/Data/TestBenchConfig.cs" />
+      <File FileName="Amazon.CaseStudy.Core/TestEnvironment/FakeLogin.cs" />
+      <File FileName="Amazon.CaseStudy.Selenium/Business/Operations/HomePage.cs" />
+      <File FileName="Amazon.CaseStudy.Selenium/Business/Operations/ProductListPage.cs" />
+      <File FileName="Amazon.CaseStudy.Core/Testbench.json" Line="9" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,10 +26,21 @@
               <Node name="Model" expanded="True" />
               <Node name="TestEnvironment" expanded="True" />
             </Node>
+            <Node name="Amazon.CaseStudy.Selenium" expanded="True">
+              <Node name="Business" expanded="True">
+                <Node name="Operations" expanded="True" />
+              </Node>
+              <Node name="Data" expanded="True">
+                <Node name="PageObjects" expanded="True" />
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Amazon.CaseStudy.Application PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
 </Properties>
