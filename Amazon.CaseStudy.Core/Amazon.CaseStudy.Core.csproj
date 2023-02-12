@@ -9,14 +9,24 @@
   <ItemGroup>
     <None Remove="Factory\" />
     <None Remove="Selenium.WebDriver" />
+    <None Remove="Data\" />
+    <None Remove="Model\" />
+    <None Remove="TestEnvironment\" />
+    <None Remove="Testbench.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Factory\" />
+    <Folder Include="Data\" />
+    <Folder Include="Model\" />
+    <Folder Include="TestEnvironment\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Amazon.CaseStudy.Selenium\Amazon.CaseStudy.Selenium.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Selenium.WebDriver" Version="4.8.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Testbench.json" />
   </ItemGroup>
 </Project>

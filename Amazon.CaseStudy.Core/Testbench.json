@@ -1,0 +1,11 @@
+﻿{
+  "login": {
+    "email": "",
+    "password": ""
+  },
+  "fakeLogin": {
+    "fakeEmail": "",
+    "fakePassword": ""
+  },
+    "searchedItem": "Apple iPhone11"
+  }

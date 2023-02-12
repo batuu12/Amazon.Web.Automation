@@ -19,6 +19,7 @@ namespace Amazon.CaseStudy.Selenium.Data.PageObjects
         public IWebElement SearchInput => webDriver.FindElement(By.XPath("//div[@class='nav-search-field']"));
 
         public IWebElement SearchButton => webDriver.FindElement(By.Id("nav-search-submit-button"));
+
     }
 }
 

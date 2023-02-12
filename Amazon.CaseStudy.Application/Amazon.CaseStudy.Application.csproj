@@ -7,4 +7,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Amazon.CaseStudy.Core\Amazon.CaseStudy.Core.csproj" />
+  </ItemGroup>
 </Project>

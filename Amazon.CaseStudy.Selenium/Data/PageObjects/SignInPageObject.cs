@@ -12,13 +12,15 @@ namespace Amazon.CaseStudy.Selenium.Data.PageObjects
             this.webDriver = webDriver;
         }
 
-        public IWebElement UsernameInput => webDriver.FindElement(By.Id("ap_email"));
+        public IWebElement EmailInput => webDriver.FindElement(By.Id("ap_email"));
 
         public IWebElement ContinueButton => webDriver.FindElement(By.Id("continue"));
 
         public IWebElement PasswordInput => webDriver.FindElement(By.Id("ap_password"));
 
         public IWebElement SignInButton => webDriver.FindElement(By.Id("signInSubmit"));
+
+        public IWebElement BlankEmailWarnMessage => webDriver.FindElement(By.XPath("//div[contains(text(),'E-posta')]"));
     }
 }
 
