@@ -1,3 +1,1 @@
 # AmazonCaseStudy
-# AmazonCaseStudy
-# AmazonCaseStudy

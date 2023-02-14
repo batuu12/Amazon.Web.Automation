@@ -10,4 +10,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Amazon.CaseStudy.Core\Amazon.CaseStudy.Core.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="NLog" />
+  </ItemGroup>
 </Project>

@@ -13,6 +13,7 @@
     <None Remove="Model\" />
     <None Remove="TestEnvironment\" />
     <None Remove="Testbench.json" />
+    <None Remove="NLog" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Factory\" />

@@ -13,6 +13,7 @@
     <None Remove="Selenium.WebDriver" />
     <None Remove="Data\PageObjects\" />
     <None Remove="Business\Operations\" />
+    <None Remove="NLog" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
@@ -23,5 +24,6 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Selenium.WebDriver" Version="4.8.0" />
+    <PackageReference Include="NLog" Version="5.1.1" />
   </ItemGroup>
 </Project>

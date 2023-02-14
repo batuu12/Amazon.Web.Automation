@@ -101,6 +101,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "NLog": {
+              "target": "Package",
+              "version": "[5.1.1, )"
+            },
             "Selenium.WebDriver": {
               "target": "Package",
               "version": "[4.8.0, )"

@@ -33,17 +33,10 @@ namespace Amazon.CaseStudy.Selenium.Business.Operations
             productListPage.AddtoCartButton.Click();
         }
 
-        public void ValidateAddedItem()
+        public bool ValidateAddedItem()
         {
             productListPage.CartButton.Click();
-            if (productListPage.SelectedItem.Displayed)
-            {
-                Console.WriteLine("Element has been added to cart successfully");
-            }
-            else
-            {
-                Console.WriteLine("Element has not beed added to cart successfully");
-            }
+            return productListPage.SelectedItem.Displayed;
         }
     }
 }

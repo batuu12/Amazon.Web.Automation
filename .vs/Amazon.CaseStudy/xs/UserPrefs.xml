@@ -1,22 +1,21 @@
 ﻿<Properties StartupConfiguration="{4EA4F5F4-FD7D-4000-8E83-6A2FD3BDF125}|Default">
-  <MonoDevelop.Ide.ItemProperties.Amazon.CaseStudy.Tests FirstBuild="True" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
   <MonoDevelop.Ide.ItemProperties.Amazon.CaseStudy.Application PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Amazon.CaseStudy.Core/Testbench.json">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Amazon.CaseStudy.Selenium/Business/Operations/HomePage.cs">
     <Files>
-      <File FileName="Amazon.CaseStudy.Application/Program.cs" />
-      <File FileName="Amazon.CaseStudy.Core/Model/TestBenchInstance.cs" />
-      <File FileName="Amazon.CaseStudy.Selenium/Business/Operations/SignInPage.cs" />
       <File FileName="Amazon.CaseStudy.Selenium/Data/PageObjects/SignInPageObject.cs" />
-      <File FileName="Amazon.CaseStudy.Core/TestEnvironment/Login.cs" />
-      <File FileName="Amazon.CaseStudy.Core/Data/TestBenchConfig.cs" />
-      <File FileName="Amazon.CaseStudy.Core/TestEnvironment/FakeLogin.cs" />
-      <File FileName="Amazon.CaseStudy.Selenium/Business/Operations/HomePage.cs" />
+      <File FileName="Amazon.CaseStudy.Selenium/Business/Operations/SignInPage.cs" Line="18" Column="10" />
+      <File FileName="Amazon.CaseStudy.Tests/LoginTests.cs" Line="27" Column="27" />
+      <File FileName="Amazon.CaseStudy.Selenium/Data/PageObjects/HomePageObject.cs" />
+      <File FileName="Amazon.CaseStudy.Core/Testbench.json" Line="4" Column="27" />
       <File FileName="Amazon.CaseStudy.Selenium/Business/Operations/ProductListPage.cs" />
-      <File FileName="Amazon.CaseStudy.Core/Testbench.json" Line="9" Column="5" />
+      <File FileName="Amazon.CaseStudy.Tests/LogoutTests.cs" Line="17" Column="1" />
+      <File FileName="Amazon.CaseStudy.Selenium/nLog.config" Line="7" Column="56" />
+      <File FileName="Amazon.CaseStudy.Application/Program.cs" Line="13" Column="25" />
+      <File FileName="Amazon.CaseStudy.Selenium/Business/Operations/HomePage.cs" Line="28" Column="10" />
+      <File FileName="Amazon.CaseStudy.Core/Model/TestBenchInstance.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -24,17 +23,25 @@
           <Node name="Amazon.CaseStudy" expanded="True">
             <Node name="Amazon.CaseStudy.Application" expanded="True" />
             <Node name="Amazon.CaseStudy.Core" expanded="True">
-              <Node name="Data" expanded="True" />
-              <Node name="Factory" expanded="True" />
               <Node name="Model" expanded="True" />
-              <Node name="TestEnvironment" expanded="True" />
             </Node>
             <Node name="Amazon.CaseStudy.Selenium" expanded="True">
               <Node name="Business" expanded="True">
-                <Node name="Operations" expanded="True" />
+                <Node name="Operations" expanded="True">
+                  <Node name="HomePage.cs" selected="True" />
+                </Node>
               </Node>
-              <Node name="Data" expanded="True">
-                <Node name="PageObjects" expanded="True" />
+            </Node>
+            <Node name="Amazon.CaseStudy.Tests" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Amazon.CaseStudy" expanded="True">
+            <Node name="Amazon.CaseStudy.Tests" expanded="True">
+              <Node name="Amazon.CaseStudy.Tests" expanded="True">
+                <Node name="LoginTests" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -42,4 +49,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

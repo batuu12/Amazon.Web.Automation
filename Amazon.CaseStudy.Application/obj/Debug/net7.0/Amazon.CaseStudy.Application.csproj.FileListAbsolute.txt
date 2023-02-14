@@ -23,3 +23,4 @@
 /Users/batuhancanci/Desktop/CodeTrainings/Amazon.CaseStudy/Amazon.CaseStudy.Application/bin/Debug/net7.0/Amazon.CaseStudy.Core.pdb
 /Users/batuhancanci/Desktop/CodeTrainings/Amazon.CaseStudy/Amazon.CaseStudy.Application/bin/Debug/net7.0/Amazon.CaseStudy.Selenium.pdb
 /Users/batuhancanci/Desktop/CodeTrainings/Amazon.CaseStudy/Amazon.CaseStudy.Application/obj/Debug/net7.0/Amazon.CaseStudy.Application.csproj.CopyComplete
+/Users/batuhancanci/Desktop/CodeTrainings/Amazon.CaseStudy/Amazon.CaseStudy.Application/bin/Debug/net7.0/NLog.dll
