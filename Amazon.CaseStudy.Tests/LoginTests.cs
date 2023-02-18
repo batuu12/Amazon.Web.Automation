@@ -48,7 +48,8 @@ namespace Amazon.CaseStudy.Tests
         [TestMethod]
         public void LoginSuccessfully()
         {
-            factory.signIn.ChooseAllChars();
+            factory.homePage.GoSignIn();
+            factory.signIn.FillEmail(TestBenchInstance.TestBench.Login.Email);
             factory.signIn.FillPassword(TestBenchInstance.TestBench.Login.Password);
             factory.signIn.ClickSignInButton();
             Assert.IsTrue(factory.homePage.IsLoggedInSuccessfully());

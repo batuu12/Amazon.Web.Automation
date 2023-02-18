@@ -1,21 +1,18 @@
 ﻿<Properties StartupConfiguration="{4EA4F5F4-FD7D-4000-8E83-6A2FD3BDF125}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Amazon.CaseStudy.Application PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Amazon.CaseStudy.Selenium/Business/Operations/HomePage.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Amazon.CaseStudy.Selenium/Data/PageObjects/HomePageObject.cs">
     <Files>
-      <File FileName="Amazon.CaseStudy.Selenium/Data/PageObjects/SignInPageObject.cs" />
-      <File FileName="Amazon.CaseStudy.Selenium/Business/Operations/SignInPage.cs" Line="18" Column="10" />
-      <File FileName="Amazon.CaseStudy.Tests/LoginTests.cs" Line="27" Column="27" />
-      <File FileName="Amazon.CaseStudy.Selenium/Data/PageObjects/HomePageObject.cs" />
-      <File FileName="Amazon.CaseStudy.Core/Testbench.json" Line="4" Column="27" />
-      <File FileName="Amazon.CaseStudy.Selenium/Business/Operations/ProductListPage.cs" />
-      <File FileName="Amazon.CaseStudy.Tests/LogoutTests.cs" Line="17" Column="1" />
-      <File FileName="Amazon.CaseStudy.Selenium/nLog.config" Line="7" Column="56" />
-      <File FileName="Amazon.CaseStudy.Application/Program.cs" Line="13" Column="25" />
-      <File FileName="Amazon.CaseStudy.Selenium/Business/Operations/HomePage.cs" Line="28" Column="10" />
-      <File FileName="Amazon.CaseStudy.Core/Model/TestBenchInstance.cs" Line="1" Column="1" />
+      <File FileName="Amazon.CaseStudy.Selenium/Business/Operations/HomePage.cs" Line="30" Column="14" />
+      <File FileName="Amazon.CaseStudy.Tests/LoginTests.cs" Line="50" Column="10" />
+      <File FileName="Amazon.CaseStudy.Application/Program.cs" Line="18" Column="22" />
+      <File FileName="Amazon.CaseStudy.Selenium/Data/PageObjects/SignInPageObject.cs" Line="15" Column="1" />
+      <File FileName="Amazon.CaseStudy.Selenium/Data/PageObjects/HomePageObject.cs" Line="19" Column="106" />
+      <File FileName="Amazon.CaseStudy.Selenium/Data/PageObjects/ProductListPageObject.cs" Line="19" Column="101" />
+      <File FileName="Amazon.CaseStudy.Selenium/Business/Operations/ProductListPage.cs" Line="29" Column="46" />
+      <File FileName="Amazon.CaseStudy.Core/Factory/PageFactory.cs" Line="10" Column="22" />
+      <File FileName="Amazon.CaseStudy.Selenium/Business/Operations/SignInPage.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,12 +20,15 @@
           <Node name="Amazon.CaseStudy" expanded="True">
             <Node name="Amazon.CaseStudy.Application" expanded="True" />
             <Node name="Amazon.CaseStudy.Core" expanded="True">
-              <Node name="Model" expanded="True" />
+              <Node name="Factory" expanded="True" />
             </Node>
             <Node name="Amazon.CaseStudy.Selenium" expanded="True">
               <Node name="Business" expanded="True">
-                <Node name="Operations" expanded="True">
-                  <Node name="HomePage.cs" selected="True" />
+                <Node name="Operations" expanded="True" />
+              </Node>
+              <Node name="Data" expanded="True">
+                <Node name="PageObjects" expanded="True">
+                  <Node name="HomePageObject.cs" selected="True" />
                 </Node>
               </Node>
             </Node>
@@ -49,7 +49,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

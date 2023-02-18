@@ -1,5 +1,6 @@
 ﻿using System;
 using Amazon.CaseStudy.Selenium.Data.PageObjects;
+using NLog;
 using OpenQA.Selenium;
 
 namespace Amazon.CaseStudy.Selenium.Business.Operations
@@ -9,6 +10,7 @@ namespace Amazon.CaseStudy.Selenium.Business.Operations
         public readonly HomePageObject homePage;
         public readonly ProductListPageObject productListPage;
         public IWebDriver webDriver;
+        private static readonly Logger Logger = LogManager.LoadConfiguration("/Users/batuhancanci/Desktop/CodeTrainings/Amazon.CaseStudy/Amazon.CaseStudy.Selenium/nLog.config").GetCurrentClassLogger();
 
 
 
@@ -22,21 +24,127 @@ namespace Amazon.CaseStudy.Selenium.Business.Operations
 
         public void SearchDesiredProduct(string productName)
         {
-            homePage.SearchInput.Click();
-            homePage.SearchInput.SendKeys(productName);
-            homePage.SearchButton.Click();
+            try
+            {
+                homePage.SearchInput.Click();
+                Logger.Info("Search input has been clicked.");
+                homePage.SearchInputText.SendKeys(productName);
+                Logger.Info("Searched item : " + productName);
+                homePage.SearchButton.Click();
+                Logger.Info("Search button has been clicked.");
+            }
+            catch (Exception ex)
+            {
+                Logger.Error(ex.Message);
+            }
+        }
+
+        public void GoCart()
+        {
+            try
+            {
+                productListPage.CartButton.Click();
+                Logger.Info("Going to cart..");
+            }
+            catch (Exception ex)
+            {
+                Logger.Error(ex.Message);
+            }
         }
 
         public void AddtoCart()
         {
-            productListPage.SelectedItem.Click();
-            productListPage.AddtoCartButton.Click();
+            try
+            {
+                productListPage.SelectedItem.Click();
+                Logger.Info("Desired item selected.");
+                productListPage.AddtoCartButton.Click();
+                Logger.Info("Selected item added to cart.");
+                ValidateAddedItem();
+            }
+            catch (Exception ex)
+            {
+                Logger.Error(ex.Message);
+            }
         }
 
-        public bool ValidateAddedItem()
+        public void AddtoCart2()
         {
-            productListPage.CartButton.Click();
-            return productListPage.SelectedItem.Displayed;
+            try
+            {
+                productListPage.SelectedItem2.Click();
+                Logger.Info("Second desired item selected.");
+                productListPage.AddtoCartButton.Click();
+                Logger.Info("Second selected item added to cart.");
+                ValidateAddedItem();
+
+            }
+            catch (Exception ex)
+            {
+                Logger.Error(ex.Message);
+            }
+        }
+
+        public void RemoveFirstProductFromCart()
+        {
+            try
+            {
+                productListPage.RemoveFirstItem.Click();
+                Logger.Info("First item has beed removed from cart.");
+            }
+            catch (Exception ex)
+            {
+                Logger.Error(ex.Message);
+            }
+        }
+
+        public void RemoveSecondProductFromCart()
+        {
+            try
+            {
+                productListPage.RemoveSecondItem.Click();
+                Logger.Info("Second item has beed removed from cart.");
+            }
+            catch (Exception ex)
+            {
+                Logger.Error(ex.Message);
+            }
+        }
+
+        public bool ValidateEmptyCart()
+        {
+            try
+            {
+                if (productListPage.CartIsEmptyText.Displayed)
+                {
+                    Logger.Info("Cart is empty!");
+                    return true;
+                }
+                return productListPage.CartIsEmptyText.Displayed;
+            }
+            catch (Exception ex)
+            {
+                Logger.Error(ex.Message);
+                return false;
+            }
+        }
+
+        private bool ValidateAddedItem()
+        {
+            try
+            {
+                if (productListPage.ProductAddedCartText.Displayed==true)
+                {
+                    Logger.Info("Product has been added to cart successfully.");
+                    return productListPage.ProductAddedCartText.Displayed;
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.Error(ex.Message);
+                return false;
+            }
+            return true;
         }
     }
 }

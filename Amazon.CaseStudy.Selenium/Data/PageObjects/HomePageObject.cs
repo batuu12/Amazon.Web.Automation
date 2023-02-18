@@ -16,7 +16,9 @@ namespace Amazon.CaseStudy.Selenium.Data.PageObjects
 
         public IWebElement SignInButton => webDriver.FindElement(By.XPath("//span[text()='Merhaba, Giriş yapın']"));
 
-        public IWebElement SearchInput => webDriver.FindElement(By.XPath("//div[@class='nav-search-field']"));
+        public IWebElement SearchInput => webDriver.FindElement(By.XPath("//div[@class='nav-search-field ']"));
+
+        public IWebElement SearchInputText => webDriver.FindElement(By.XPath("//div[@class='nav-search-field ']/input"));
 
         public IWebElement SearchButton => webDriver.FindElement(By.Id("nav-search-submit-button"));
 

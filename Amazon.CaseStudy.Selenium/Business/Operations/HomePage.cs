@@ -19,18 +19,45 @@ namespace Amazon.CaseStudy.Selenium.Business.Operations
         }
 
 
+        public void ClickHomePageButton()
+        {
+            try
+            {
+                homePage.HomepageButton.Click();
+                Logger.Info("HomePage button clicked.");
+            }
+            catch (Exception ex)
+            {
+                Logger.Error(ex.Message);
+            }
+        }
+
         public void GoSignIn()
         {
-            homePage.HomepageButton.Click();
-            Logger.Info("HomePage button clicked.");
-            homePage.SignInButton.Click();
-            Logger.Info("Sign In button clicked");
+            try
+            {
+                homePage.SignInButton.Click();
+                Logger.Info("Sign In button clicked");
+            }
+            catch (Exception ex)
+            {
+                Logger.Error(ex.Message);
+            }
+            
         }
 
         public bool IsLoggedInSuccessfully()
         {
-            Logger.Info("Logged in successfully");
+            try
+            {
+                Logger.Info("Logged in successfully");
+            }
+            catch (Exception ex)
+            {
+                Logger.Error(ex.Message);
+            }
             return homePage.MyAccountButton.Displayed;
+
         }
     }
 }

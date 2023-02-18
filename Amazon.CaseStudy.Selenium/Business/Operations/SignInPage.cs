@@ -1,5 +1,6 @@
 ﻿using System;
 using Amazon.CaseStudy.Selenium.Data.PageObjects;
+using NLog;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
 
@@ -9,6 +10,7 @@ namespace Amazon.CaseStudy.Selenium.Business.Operations
 	{
         public readonly SignInPageObject signInPageObject;
         public IWebDriver webDriver;
+        private static readonly Logger Logger = LogManager.LoadConfiguration("/Users/batuhancanci/Desktop/CodeTrainings/Amazon.CaseStudy/Amazon.CaseStudy.Selenium/nLog.config").GetCurrentClassLogger();
 
 
         public SignInPage(IWebDriver webDriver)
@@ -30,22 +32,49 @@ namespace Amazon.CaseStudy.Selenium.Business.Operations
 
         public void FillEmail(string email)
         {
-            signInPageObject.EmailInput.Click();
-            signInPageObject.EmailInput.SendKeys(email);
-            signInPageObject.ContinueButton.Click();
+            try
+            {
+                signInPageObject.EmailInput.Click();
+                Logger.Info("Email input has been clicked.");
+                signInPageObject.EmailInput.SendKeys(email);
+                Logger.Info("Email input has been filled with : " + email);
+                signInPageObject.ContinueButton.Click();
+                Logger.Info("Continue button has been clicked.");
+            }
+            catch (Exception ex)
+            {
+                Logger.Error(ex.Message);
+            }
 
         }
 
         public void FillPassword(string password)
         {
-            signInPageObject.PasswordInput.Click();
-            signInPageObject.PasswordInput.SendKeys(password);
+            try
+            {
+                signInPageObject.PasswordInput.Click();
+                Logger.Info("Password input has been clicked.");
+                signInPageObject.PasswordInput.SendKeys(password);
+                Logger.Info("Email input has been filled with : " + password);
+            }
+            catch (Exception ex)
+            {
+                Logger.Error(ex.Message);
+            }
             
         }
 
         public void ClickSignInButton()
         {
-            signInPageObject.SignInButton.Click();
+            try
+            {
+                signInPageObject.SignInButton.Click();
+                Logger.Info("Sign in button clicked.");
+            }
+            catch (Exception ex)
+            {
+                Logger.Error(ex.Message);
+            }
         }
 
         public void ChooseAllChars()
