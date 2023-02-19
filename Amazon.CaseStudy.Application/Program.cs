@@ -14,15 +14,20 @@ public class Program
         factory.signIn.FillPassword(TestBenchInstance.TestBench.Login.Password);
         factory.signIn.ClickSignInButton();
 
-        // Add product to cart
-        factory.homePage.ClickHomePageButton();
+        // Add product to wishlist and cart
         factory.productList.SearchDesiredProduct(TestBenchInstance.TestBench.SearchedItem);
+        factory.productList.SelectItem();
+        factory.productList.AddtoWishlist();
         factory.productList.AddtoCart();
 
-        // Add second product to cart
+        // Add second product to wishlist and cart
+        Thread.Sleep(TimeSpan.FromSeconds(10));
         factory.homePage.ClickHomePageButton();
         factory.productList.SearchDesiredProduct(TestBenchInstance.TestBench.SearchedItem);
-        factory.productList.AddtoCart2();
+        factory.productList.SelectSecondItem();
+        factory.productList.AddtoWishlist();
+        Thread.Sleep(TimeSpan.FromSeconds(10));
+        factory.productList.AddtoCart();
 
         // Remove products from cart
         factory.productList.GoCart();
@@ -30,11 +35,17 @@ public class Program
         factory.productList.RemoveSecondProductFromCart();
         factory.productList.ValidateEmptyCart();
 
-        // Add product to wishlist
-
+        // Remove products from wishlist
+        factory.homePage.ClickHomePageButton();
+        factory.wishlist.MoveToMyAccTab();
+        factory.wishlist.GoWishlist();
+        factory.wishlist.RemoveProductFromWishlist();
+        factory.wishlist.RemoveSecondProductFromWishlist();
 
         // Logout successfully
-
+        factory.homePage.ClickHomePageButton();
+        factory.wishlist.MoveToMyAccTab();
+        factory.homePage.Logout();
 
     }
 }

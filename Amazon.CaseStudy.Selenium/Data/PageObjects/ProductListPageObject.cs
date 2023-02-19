@@ -32,6 +32,14 @@ namespace Amazon.CaseStudy.Selenium.Data.PageObjects
 
         public IWebElement CartIsEmptyText => webDriver.FindElement(By.XPath("//h1[contains(text(),'Amazon sepetiniz boş')]"));
 
+        public IWebElement AddtoWishlist => webDriver.FindElement(By.Id("add-to-wishlist-button-submit"));
+
+        public IWebElement WishListName => webDriver.FindElement(By.XPath("//span[contains(text(),'Alışveriş Listesi')]"));
+
+        public IWebElement CloseCartPopUp => webDriver.FindElement(By.XPath("//a[@class='a-link-normal close-button']"));
+
+        public IWebElement CloseWishlistPopUp => webDriver.FindElement(By.XPath("//button[@class=' a-button-close a-declarative']"));
+
     }
 }
 

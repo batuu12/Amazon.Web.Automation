@@ -26,6 +26,10 @@ namespace Amazon.CaseStudy.Selenium.Data.PageObjects
 
         public IWebElement MyAccountText => webDriver.FindElement(By.XPath("//a[text()='Hesabım']"));
 
+        public IWebElement LogoutButton => webDriver.FindElement(By.XPath("//span[contains(text(),'Çıkış Yap')]"));
+
+        public IWebElement ValidateLogout => webDriver.FindElement(By.XPath("//*[contains(text(),'Giriş yap')]"));
+
     }
 }
 

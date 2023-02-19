@@ -19,11 +19,6 @@ namespace Amazon.CaseStudy.Selenium.Model
 
         private AmazonDriver()
         {
-            ChromeOptions options = new ChromeOptions();
-
-            options.AddArguments("--disable-notifications");
-            options.AddArguments("disable-infobars");
-
             webDriver = new ChromeDriver();
 
             waitDriver = new WebDriverWait(webDriver, TimeSpan.FromSeconds(30));

@@ -46,6 +46,21 @@ namespace Amazon.CaseStudy.Selenium.Business.Operations
             
         }
 
+        public void Logout()
+        {
+            try
+            {
+                homePage.LogoutButton.Click();
+                Logger.Info("Logout button has been clicked.");
+                Thread.Sleep(TimeSpan.FromSeconds(5));
+                IsLoggedOutSuccessfully();
+            }
+            catch (Exception ex)
+            {
+                Logger.Error(ex.Message);
+            }
+        }
+
         public bool IsLoggedInSuccessfully()
         {
             try
@@ -58,6 +73,23 @@ namespace Amazon.CaseStudy.Selenium.Business.Operations
             }
             return homePage.MyAccountButton.Displayed;
 
+        }
+
+        private bool IsLoggedOutSuccessfully()
+        {
+            try
+            {
+                if (homePage.ValidateLogout.Displayed)
+                {
+                    Logger.Info("Logout process has been successfully");
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Logger.Error(ex.Message);
+                return false;
+            }
         }
     }
 }

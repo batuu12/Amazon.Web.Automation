@@ -15,6 +15,6 @@ namespace Amazon.CaseStudy.Core.Data
 		[JsonProperty("searchedItem")]
         public string SearchedItem { get; set; }
 
-    }
+	}
 }
 
