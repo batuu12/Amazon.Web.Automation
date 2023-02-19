@@ -1,47 +1,38 @@
 ﻿<Properties StartupConfiguration="{4EA4F5F4-FD7D-4000-8E83-6A2FD3BDF125}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Amazon.CaseStudy.Application PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Amazon.CaseStudy.Selenium/Business/Operations/WishlistPage.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Amazon.CaseStudy.Tests/LogoutTests.cs">
     <Files>
-      <File FileName="Amazon.CaseStudy.Application/Program.cs" Line="41" Column="28" />
-      <File FileName="Amazon.CaseStudy.Core/Testbench.json" Line="13" Column="2" />
+      <File FileName="Amazon.CaseStudy.Application/Program.cs" />
+      <File FileName="Amazon.CaseStudy.Core/Testbench.json" />
       <File FileName="Amazon.CaseStudy.Core/Model/TestBenchInstance.cs" />
       <File FileName="Amazon.CaseStudy.Core/Data/TestBenchConfig.cs" />
-      <File FileName="Amazon.CaseStudy.Selenium/Model/AmazonDriver.cs" Line="26" Column="50" />
-      <File FileName="Amazon.CaseStudy.Selenium/Business/Operations/HomePage.cs" Line="58" Column="42" />
-      <File FileName="Amazon.CaseStudy.Selenium/Data/PageObjects/ProductListPageObject.cs" Line="8" Column="9" />
-      <File FileName="Amazon.CaseStudy.Core/Factory/PageFactory.cs" Line="20" Column="49" />
-      <File FileName="Amazon.CaseStudy.Selenium/Business/Operations/ProductListPage.cs" Line="17" Column="16" />
-      <File FileName="Amazon.CaseStudy.Selenium/Data/PageObjects/WishlistObjects.cs" Line="21" Column="44" />
-      <File FileName="Amazon.CaseStudy.Selenium/Business/Operations/WishlistPage.cs" Line="65" Column="42" />
-      <File FileName="Amazon.CaseStudy.Selenium/Data/PageObjects/HomePageObject.cs" Line="29" Column="112" />
-      <File FileName="Amazon.CaseStudy.Selenium/Business/Operations/SignInPage.cs" Line="42" Column="60" />
-      <File FileName="Amazon.CaseStudy.Tests/LoginTests.cs" Line="35" Column="44" />
+      <File FileName="Amazon.CaseStudy.Selenium/Model/AmazonDriver.cs" />
+      <File FileName="Amazon.CaseStudy.Selenium/Business/Operations/HomePage.cs" />
+      <File FileName="Amazon.CaseStudy.Selenium/Data/PageObjects/ProductListPageObject.cs" />
+      <File FileName="Amazon.CaseStudy.Core/Factory/PageFactory.cs" />
+      <File FileName="Amazon.CaseStudy.Selenium/Business/Operations/ProductListPage.cs" />
+      <File FileName="Amazon.CaseStudy.Selenium/Data/PageObjects/WishlistObjects.cs" />
+      <File FileName="Amazon.CaseStudy.Selenium/Business/Operations/WishlistPage.cs" />
+      <File FileName="Amazon.CaseStudy.Selenium/Data/PageObjects/HomePageObject.cs" />
+      <File FileName="Amazon.CaseStudy.Selenium/Business/Operations/SignInPage.cs" />
+      <File FileName="Amazon.CaseStudy.Tests/LoginTests.cs" />
+      <File FileName="Amazon.CaseStudy.Tests/LogoutTests.cs" Line="16" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Amazon.CaseStudy" expanded="True">
             <Node name="Amazon.CaseStudy.Application" expanded="True" />
-            <Node name="Amazon.CaseStudy.Selenium" expanded="True">
-              <Node name="Business" expanded="True">
-                <Node name="Operations" expanded="True">
-                  <Node name="WishlistPage.cs" selected="True" />
-                </Node>
-              </Node>
-              <Node name="Data" expanded="True">
-                <Node name="PageObjects" expanded="True" />
-              </Node>
-              <Node name="Model" expanded="True" />
-            </Node>
+            <Node name="Amazon.CaseStudy.Tests" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Amazon.CaseStudy.Application PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
